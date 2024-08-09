@@ -82,7 +82,7 @@ function Login() {
                     <p className="singUplink mt-2">New User? <Link to="/register" className="signuplinkword">SignUp</Link> Here</p>
                     <p className="deicignedByLine mt-3">
                         {/* &#169; Created by Gajendran A (22-26) CSE-B */}
-                        &#169; Developed by KCE 2024
+                        &#169; Developed by KCE - CSE 2024
                     </p>
                 </div>
             </div>
