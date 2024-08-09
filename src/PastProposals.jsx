@@ -20,7 +20,7 @@ const PastProposals = () => {
   useEffect(() => {
     const getProposalDetails = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/proposalview");
+        const response = await axios.get("https://emsbackend-ten.vercel.app/proposalview");
         console.log(response.data)
         let arr = response.data;
         setProposals(arr.filter(one => new Date(one.date.end) < new Date() && 

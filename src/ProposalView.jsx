@@ -20,7 +20,7 @@ const ProposalView = () => {
   useEffect(() => {
     const getProposalDetails = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/proposalview");
+        const response = await axios.get("https://emsbackend-ten.vercel.app/proposalview");
         setProposals(response.data);
         setFilteredProposals(response.data)
       } catch (error) {

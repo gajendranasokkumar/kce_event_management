@@ -20,7 +20,7 @@ const HODSingleProposalView = () => {
         console.log("inside comming")
         const getProposalById = async () => {
             try {
-                const receivedObject = await axios.get(`http://localhost:3001/proposalview/${oneproposal}`);
+                const receivedObject = await axios.get(`https://emsbackend-ten.vercel.app/proposalview/${oneproposal}`);
                 console.log("Came")
                 console.log(receivedObject.data)
                 setOnePro(receivedObject.data);
@@ -71,7 +71,7 @@ const HODSingleProposalView = () => {
     const denyProposal = async (onePro, denyData) => {
         let root;
         try {
-            const response = await axios.put(`http://localhost:3001/hodproposalview/${oneproposal}`, denyData);
+            const response = await axios.put(`https://emsbackend-ten.vercel.app/hodproposalview/${oneproposal}`, denyData);
             // console.log(response.data);
             root = createRoot(document.getElementById('mainSingle'));
             root.render(<Message message={"Approval Denied"} status={false} />);
@@ -86,7 +86,7 @@ const HODSingleProposalView = () => {
     const approveProposal = async (onePro, approveData) => {
         let root;
         try {
-            const response = await axios.put(`http://localhost:3001/hodproposalview/${oneproposal}`, approveData);
+            const response = await axios.put(`https://emsbackend-ten.vercel.app/hodproposalview/${oneproposal}`, approveData);
             // console.log(response.data);
             // const rootElement = document.getElementById('mainSingle');
             // ReactDOM.render(<Message message={"Approval Succeed"} status={true} />, rootElement);

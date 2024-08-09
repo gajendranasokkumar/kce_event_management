@@ -14,7 +14,7 @@ const SignUp = () => {
     const handleRegister = (e) => {
         e.preventDefault();
         console.log({ name, password });
-        axios.post("http://localhost:3001/users", { name, password, email})
+        axios.post("https://emsbackend-ten.vercel.app/users", { name, password, email})
             .then((result) => {
                 console.log(result)
                 const root = createRoot(document.getElementById('mainSingle'));
@@ -74,7 +74,8 @@ const SignUp = () => {
                         </div>
                     </form>
                     <p className="deicignedByLine signUpPageByLINE">
-                        &#169; Created by Gajendran A (22-26) CSE-B
+                        {/* &#169; Created by Gajendran A (22-26) CSE-B */}
+                        &#169; Developed by KCE 2024
                     </p>
                 </div>
             </div>

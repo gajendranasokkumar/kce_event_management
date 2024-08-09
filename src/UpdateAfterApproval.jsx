@@ -33,7 +33,7 @@ const UpdateAfterApproval = () => {
     useEffect(() => {
         const getProposalById = async () => {
             try {
-                const receivedObject = await axios.get(`http://localhost:3001/proposalview/${oneproposal}`);
+                const receivedObject = await axios.get(`https://emsbackend-ten.vercel.app/proposalview/${oneproposal}`);
                 console.log(receivedObject.data)
                 setOnePro(receivedObject.data);
                 setSumData(receivedObject.data)
@@ -104,7 +104,7 @@ const UpdateAfterApproval = () => {
 
     const handleUpdate = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3001/updateProposal", {
+        axios.post("https://emsbackend-ten.vercel.app/updateProposal", {
             ...onePro, ...sumData, hodapproval: "waiting", principalapproval: "waiting"
         })
             .then((result) => {

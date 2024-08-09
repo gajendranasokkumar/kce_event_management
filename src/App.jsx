@@ -19,6 +19,7 @@ import App22 from "./App22";
 import Loader from "./Loader";
 import Uploadimage from "./Uploadimage";
 import NewComp from "./NewComp"
+import SpeechToText from "./SpeechToTest";
 
 
 
@@ -31,6 +32,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/new" element={<NewComp />} />
+        <Route path="/speech" element={<SpeechToText />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp  />} />
         <Route path="/home/:name" element={<Home />} />

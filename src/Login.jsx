@@ -18,7 +18,7 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
         console.log({ name, password });
-        axios.post("http://localhost:3001/login", { name, password })
+        axios.post("https://emsbackend-ten.vercel.app/login", { name, password })
             .then((result) => {
                 console.log(result)
                 if(result.data === "Success")
@@ -81,7 +81,8 @@ function Login() {
                     </form>
                     <p className="singUplink mt-2">New User? <Link to="/register" className="signuplinkword">SignUp</Link> Here</p>
                     <p className="deicignedByLine mt-3">
-                        &#169; Created by Gajendran A (22-26) CSE-B
+                        {/* &#169; Created by Gajendran A (22-26) CSE-B */}
+                        &#169; Developed by KCE 2024
                     </p>
                 </div>
             </div>

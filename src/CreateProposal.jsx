@@ -31,7 +31,7 @@ const CreateProposal = () => {
     e.preventDefault();
     console.log("Comming into submit axios function ")
     console.log(proposalDetails);
-    await axios.post("http://localhost:3001/allproposals", {
+    await axios.post("https://emsbackend-ten.vercel.app/allproposals", {
       ...proposalDetails, hodapproval: "waiting", principalapproval: "waiting"
     })
       .then((result) => {

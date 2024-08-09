@@ -21,6 +21,7 @@ const NavBar = ({name}) => {
     <nav className='homeNav'>
             <div className='navLogoContainer'>
                 <img className='logo' src="https://res.cloudinary.com/dkbwdkthr/image/upload/v1694825929/kce_logo_png.png" />
+                {/* <img className='logo' src="https://res.cloudinary.com/dkbwdkthr/image/upload/v1722827807/jai1.png" /> */}
                 <p className='welcomeText'>Welcome! <span className='displayname'>{name}</span> </p>
             </div>
             <div className='hamburgerContainer'>

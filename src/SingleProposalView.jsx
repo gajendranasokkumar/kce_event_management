@@ -65,7 +65,7 @@ const SingleProposalView = () => {
 
     const getProposalById = async () => {
         try {
-            const receivedObject = await axios.get(`http://localhost:3001/proposalview/${oneproposal}`);
+            const receivedObject = await axios.get(`https://emsbackend-ten.vercel.app/proposalview/${oneproposal}`);
             console.log("Came")
             console.log(receivedObject.data)
             setOnePro(receivedObject.data);
@@ -125,7 +125,7 @@ const SingleProposalView = () => {
 
     const denyProposal = async (onePro, denyData) => {
         try {
-            const response = await axios.put(`http://localhost:3001/proposalview/${oneproposal}`, denyData);
+            const response = await axios.put(`https://emsbackend-ten.vercel.app/proposalview/${oneproposal}`, denyData);
             console.log(response.data);
             const root = createRoot(document.getElementById('mainSingle'));
             root.render(<Message message={"Approval Denied"} status={false} />);
@@ -140,7 +140,7 @@ const SingleProposalView = () => {
 
     const approveProposal = async (onePro, approveData) => {
         try {
-            const response = await axios.put(`http://localhost:3001/proposalview/${oneproposal}`, approveData);
+            const response = await axios.put(`https://emsbackend-ten.vercel.app/proposalview/${oneproposal}`, approveData);
             console.log(response.data);
             // const rootElement = document.getElementById('mainSingle');
             // ReactDOM.render(<Message message={"Approval Succeed"} status={true} />, rootElement);

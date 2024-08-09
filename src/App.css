@@ -28,7 +28,8 @@
 .logoContainer {
   height: 120px;
   width: 120px;
-  background-image: url("https://res.cloudinary.com/dkbwdkthr/image/upload/v1694825929/kce_logo_png.png");
+  /* background-image: url("https://res.cloudinary.com/dkbwdkthr/image/upload/v1694825929/kce_logo_png.png"); */
+  background-image: url("https://res.cloudinary.com/dkbwdkthr/image/upload/v1722827807/jai1.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -38,7 +39,7 @@
   top: -80px;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid rgba(162, 158, 154, 0.527);
+  /* border: 2px solid rgba(162, 158, 154, 0.527); */
   border-radius: 100%;
 }
 

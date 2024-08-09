@@ -24,7 +24,7 @@ const UserProposalView = () => {
         console.log("inside comming")
         const getProposalById = async () => {
             try {
-                const receivedObject = await axios.get(`http://localhost:3001/proposalview/${oneproposal}`);
+                const receivedObject = await axios.get(`https://emsbackend-ten.vercel.app/proposalview/${oneproposal}`);
                 console.log("Came")
                 console.log(receivedObject.data)
                 setOnePro(receivedObject.data);
@@ -165,7 +165,7 @@ const UserProposalView = () => {
 
     const handleUpdate = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3001/updateProposal", {
+        axios.post("https://emsbackend-ten.vercel.app/updateProposal", {
             ...onePro, ...oneProEdit
         })
             .then((result) => {

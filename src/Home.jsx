@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(() => {
     const getProposalDetails = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/proposalview");
+        const response = await axios.get("https://emsbackend-ten.vercel.app/proposalview");
         console.log(response.data)
         setProposals(response.data);
       } catch (error) {
