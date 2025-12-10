@@ -18,7 +18,7 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
         console.log({ name, password });
-        axios.post("https://emsbackend-ten.vercel.app/login", { name, password })
+        axios.post("http://localhost:3001/login", { name, password })
             .then((result) => {
                 console.log(result)
                 if(result.data === "Success")
